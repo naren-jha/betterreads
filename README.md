@@ -9,6 +9,8 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 3. Run the Spring Boot App.
 
 
+## Cassandra console
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/58611230/198153521-0814456b-fffc-4286-8911-ed7f466eed7a.png">
 
+## UI:
 <img width="1788" alt="image" src="https://user-images.githubusercontent.com/58611230/198153651-d7d830a4-61a0-44e7-b5ee-f7a1a455bfe7.png">
