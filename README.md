@@ -1,5 +1,6 @@
 # betterreads
 https://youtu.be/LxVGFBRpEFM?list=PL9MzuY4_smVbXddmeo8WU-OuvQMlRcSDx
+
 Cassandra demo app - BetterReads (Similar to GoodReads)
 
 ## [GitHub User authentication setup](https://youtu.be/nwyf_4aSkqM)
