@@ -12,8 +12,9 @@ Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/
 
 ##  Summary :
 ### Uploading data to Cassandra cluster:
-First we upload data to datastax Cassandra cluster using [betterread-data-loader](https://github.com/njha-collab/betterread-data-loader) app. We get data dump from https://openlibrary.org/data
-openlibrary developers support page - https://openlibrary.org/developers
+* First we upload data to datastax Cassandra cluster using [betterread-data-loader](https://github.com/njha-collab/betterread-data-loader) app. 
+* We get data dump from https://openlibrary.org/data
+* openlibrary developers support page - https://openlibrary.org/developers
 
 Cassandra console after data uplaod:
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/58611230/198153521-0814456b-fffc-4286-8911-ed7f466eed7a.png">
