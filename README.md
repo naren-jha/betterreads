@@ -1,7 +1,8 @@
 # betterreads
-[Youtube playlist](https://youtu.be/LxVGFBRpEFM?list=PL9MzuY4_smVbXddmeo8WU-OuvQMlRcSDx)
 
 Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded into datastax Cassandra cluster using [this app](https://github.com/njha-collab/betterread-data-loader)
+
+[Youtube playlist](https://youtu.be/LxVGFBRpEFM?list=PL9MzuY4_smVbXddmeo8WU-OuvQMlRcSDx)
 
 ## GitHub User authentication setup
 Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/koushikkothagal/spring-github-login-starter) (or [this](https://github.com/koushikkothagal/spring-reactive-github-login-starter)) github repositories to build oauth2Login using github.
