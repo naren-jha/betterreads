@@ -25,3 +25,7 @@ We get book by id from Cassandra book_by_id table and display it to UI
 ### Book search:
 We make call to https://openlibrary.org/search.json?q={query} api to get search result. We can't perform search in Cassandra as that would be very slow. Ideally we should have used an Apache Lucene based text search engine (such as elastic-search or solr). We should have build an index in elastic-search from Cassandra (or Kafka depending on how we design it) and then we should have performed the search query on elastic-search. However, since the scope of this app was to learn how to use Cassandra db, we are leveraging openlibrary's available search API - https://openlibrary.org/dev/docs/api/search. 
 <img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198834770-57aa76d2-e1e7-4c95-8aa2-3c7591c07b64.png">
+
+### Tracking user interactions with books:
+
+### My books feature:
