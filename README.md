@@ -9,12 +9,12 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 3. Run the Spring Boot App.
 
 
-## Uploading data to Cassandra cluster:
+##  Summary :
+### Uploading data to Cassandra cluster:
 First we upload data to datastax Cassandra cluster using [betterread-data-loader](https://github.com/njha-collab/betterread-data-loader) app. We get data dump from https://openlibrary.org/data
 Cassandra console after data uplaod:
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/58611230/198153521-0814456b-fffc-4286-8911-ed7f466eed7a.png">
 
-##  Summary :
 ### Book detail page
 We get book by id from Cassandra book_by_id table and display it to UI
 <img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198833633-e4d6ca3b-12f8-4636-a9fd-e5a3bb87b1a5.png">
