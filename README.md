@@ -17,4 +17,4 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 <img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198833633-e4d6ca3b-12f8-4636-a9fd-e5a3bb87b1a5.png">
 
 ### Search result page
-<img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198833464-f3a995ae-be1f-468c-9ac3-29b910b44a9a.png">
+<img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198834770-57aa76d2-e1e7-4c95-8aa2-3c7591c07b64.png">
