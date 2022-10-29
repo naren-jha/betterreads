@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Optional;
 
 import static com.njha.betterreads.common.Constants.COVER_IMAGE_ROOT;
-import static com.njha.betterreads.common.Constants.NO_COVER_IMG_PATH;
+import static com.njha.betterreads.common.Constants.DEFAULT_NO_BOOK_COVER_IMG;
 
 @Controller
 @RequestMapping("book")
@@ -27,7 +27,7 @@ public class BookController {
         if (bookOptional.isPresent()) {
             Book book = bookOptional.get();
 
-            String coverImageUrl = NO_COVER_IMG_PATH;
+            String coverImageUrl = DEFAULT_NO_BOOK_COVER_IMG;
             if (book.getCoverIds() != null && book.getCoverIds().size() > 0) {
                 coverImageUrl = COVER_IMAGE_ROOT + book.getCoverIds().get(0) + "-L.jpg";
             }
