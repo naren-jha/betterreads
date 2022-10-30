@@ -15,7 +15,7 @@ Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/
 * We get data dump from https://openlibrary.org/data. checkout openlibrary developers support page - https://openlibrary.org/developers
 * And then process dump file and create authors data and books data in Cassandra cluster.
 
-Cassandra console after data creation:
+**Cassandra console after data creation:**
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/58611230/198153521-0814456b-fffc-4286-8911-ed7f466eed7a.png">
 
 ### Book detail:
