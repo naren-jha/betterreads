@@ -27,13 +27,13 @@ We make call to https://openlibrary.org/search.json?q={query} api to get search 
 <img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198834770-57aa76d2-e1e7-4c95-8aa2-3c7591c07b64.png">
 
 ### Tracking user interactions with books:
-Cassandra console: For every user interaction with a new book, a new row will be added in this table
+**Cassandra console:** For every user interaction with a new book, a new row will be added in this table
 1. user njha-collab adds info for book OL10005006W 
 2. user njha-collab updates info for book OL10005006W (same entry is updated)
 3. user njha-collab adds info for another book OL10009701W 
 ![image](https://user-images.githubusercontent.com/58611230/198901956-bcc42b3f-50e7-4eea-b1ad-7701fcc50d66.png)
 
-UI:
+**UI:**
 ![image](https://user-images.githubusercontent.com/58611230/198902049-70b959b2-8675-476e-9e39-edcab624ef9a.png)
 ![image](https://user-images.githubusercontent.com/58611230/198902063-b7b948af-95bc-4eac-879d-569b20d27803.png)
 
