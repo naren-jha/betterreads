@@ -10,12 +10,12 @@ Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/
 2. Add those values in application.yml
 3. Run the Spring Boot App.
 
-### Uploading data to Cassandra cluster:
-* First we upload data to datastax Cassandra cluster using [betterread-data-loader](https://github.com/njha-collab/betterread-data-loader) app. 
-* We get data dump from https://openlibrary.org/data
-* openlibrary developers support page - https://openlibrary.org/developers
+### Creating books data in Cassandra cluster:
+* First we create books data in datastax Cassandra cluster using [betterread-data-loader](https://github.com/njha-collab/betterread-data-loader) app. 
+* We get data dump from https://openlibrary.org/data. checkout openlibrary developers support page - https://openlibrary.org/developers
+* And then process dump file and create authors data and books data in Cassandra cluster.
 
-Cassandra console after data uplaod:
+Cassandra console after data creation:
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/58611230/198153521-0814456b-fffc-4286-8911-ed7f466eed7a.png">
 
 ### Book detail:
@@ -27,5 +27,12 @@ We make call to https://openlibrary.org/search.json?q={query} api to get search 
 <img width="1790" alt="image" src="https://user-images.githubusercontent.com/58611230/198834770-57aa76d2-e1e7-4c95-8aa2-3c7591c07b64.png">
 
 ### Tracking user interactions with books:
+Cassandra console: For every user interaction with a new book, a new row will be added in this table
+![image](https://user-images.githubusercontent.com/58611230/198901956-bcc42b3f-50e7-4eea-b1ad-7701fcc50d66.png)
+
+UI:
+![image](https://user-images.githubusercontent.com/58611230/198902049-70b959b2-8675-476e-9e39-edcab624ef9a.png)
+![image](https://user-images.githubusercontent.com/58611230/198902063-b7b948af-95bc-4eac-879d-569b20d27803.png)
+
 
 ### My books feature:
