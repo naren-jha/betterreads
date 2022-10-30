@@ -14,7 +14,7 @@ public class UserController {
 
     @GetMapping
     public String getUser(@AuthenticationPrincipal OAuth2User principal) {
-        System.out.println(principal);
+        log.info(principal.toString());
         return "Hello " + principal.getAttribute("name");
     }
 }

@@ -1,5 +1,8 @@
 package com.njha.betterreads.book;
 
+import com.njha.betterreads.userbook.BookInfoByUserIdAndBookId;
+import com.njha.betterreads.userbook.UserBookComboPrimaryKey;
+import com.njha.betterreads.userbook.UserBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -21,6 +24,9 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
+    @Autowired
+    private UserBookRepository userBookRepository;
+
     @GetMapping("/{bookId}")
     public String getBook(@PathVariable("bookId") String bookId, Model model, @AuthenticationPrincipal OAuth2User principal) {
         Optional<Book> bookOptional = bookRepository.findById(bookId);
@@ -38,18 +44,21 @@ public class BookController {
             if (principal != null && principal.getAttribute("login") != null) {
                 String userId = principal.getAttribute("login");
                 model.addAttribute("loginId", userId);
-                /*UserBooksPrimaryKey key = new UserBooksPrimaryKey();
-                key.setBookId(bookId);
-                key.setUserId(userId);
-                Optional<UserBooks> userBooks = userBooksRepository.findById(key);
-                if (userBooks.isPresent()) {
-                    model.addAttribute("userBooks", userBooks.get());
+                UserBookComboPrimaryKey userBookPK = UserBookComboPrimaryKey.builder()
+                        .userId(userId)
+                        .bookId(bookId)
+                        .build();
+                Optional<BookInfoByUserIdAndBookId> userBookInfo = userBookRepository.findById(userBookPK);
+
+                if (userBookInfo.isPresent()) {
+                    model.addAttribute("userBookInfo", userBookInfo.get());
                 } else {
-                    model.addAttribute("userBooks", new UserBooks());
-                }*/
+                    model.addAttribute("userBookInfo", BookInfoByUserIdAndBookId.builder().build());
+                }
             }
             return "book";
         }
+
         return "book-not-found";
     }
 }
