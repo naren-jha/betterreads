@@ -28,9 +28,9 @@ We make call to https://openlibrary.org/search.json?q={query} api to get search 
 
 ### Tracking user interactions with books:
 Cassandra console: For every user interaction with a new book, a new row will be added in this table
-1 - user njha-collab adds info for book OL10005006W 
-2 - user njha-collab updates info for book OL10005006W (same entry is updated)
-3 - user njha-collab adds info for another book OL10009701W 
+1. user njha-collab adds info for book OL10005006W 
+2. user njha-collab updates info for book OL10005006W (same entry is updated)
+3. user njha-collab adds info for another book OL10009701W 
 ![image](https://user-images.githubusercontent.com/58611230/198901956-bcc42b3f-50e7-4eea-b1ad-7701fcc50d66.png)
 
 UI:
