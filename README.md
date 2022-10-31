@@ -39,7 +39,7 @@ We make call to https://openlibrary.org/search.json?q={query} api to get search 
 
 
 ### My books feature:
-Displays top books that user has interacted with on user's home page
+Displays top books that a user has interacted with on user's home page
 **Cassandra console:**
 ![image](https://user-images.githubusercontent.com/58611230/198909098-f6b616c3-0c4d-49ec-885d-e33a353b09f6.png)
 
