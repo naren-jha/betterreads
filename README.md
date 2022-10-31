@@ -51,3 +51,8 @@ Checkout the [BookInfoByUserId.java Class](https://github.com/njha-collab/better
 
 **UI:**
 ![image](https://user-images.githubusercontent.com/58611230/198909034-d1c1ce34-e267-493e-9a59-984e5100e526.png)
+
+
+## Reading materials:
+* https://www.baeldung.com/spring-data-cassandra-tutorial
+* https://medium.com/@aamine/spring-data-for-cassandra-a-complete-example-3c6f7f39fef9
