@@ -58,6 +58,9 @@ public class UserBookController {
 
         userBookRepository.save(userBookInfo);
 
+        // TODO: this part can be optimized further
+        // maybe instead of hitting db again, we can get info in hidden fields from the UI itself (since
+        // we are already on the book detail page and so it has all the book details that we are fetching again)
         Optional<Book> bookOptional = bookRepository.findById(bookId);
         if (bookOptional.isPresent()) {
             Book book = bookOptional.get();

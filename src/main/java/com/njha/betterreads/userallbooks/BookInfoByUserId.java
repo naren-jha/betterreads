@@ -17,6 +17,21 @@ import java.util.UUID;
 import static com.njha.betterreads.common.Constants.COVER_IMAGE_ROOT;
 import static com.njha.betterreads.common.Constants.DEFAULT_NO_BOOK_COVER_IMG;
 
+/**
+ * This class represents user's interactions with a book. This is denormalized data from
+ * {@link com.njha.betterreads.userbook.BookInfoByUserIdAndBookId} and
+ * {@link com.njha.betterreads.book.Book}
+ *
+ * We are keeping this new table and denormalizing data because we want faster access
+ * to all books info that a user has interacted with.
+ *
+ * When a logged-in user visits home page, we are going to show the top books that the user has
+ * interacted with.
+ *
+ * Partitioning is done only on user_id column because we want to be able to store multiple entries
+ * for this object for one user.
+ *
+ */
 @Table(value = "books_by_userid")
 @Setter
 @Getter
