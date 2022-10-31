@@ -39,27 +39,27 @@
     <section th:if="${loginId}"  class="content">
         <h1>My Books</h1>
 
-        <div class="card mb-3" style="max-width: 540px;" th:each="dto: ${books}">
+        <div class="card mb-3" style="max-width: 540px;" th:each="userBook: ${userBooks}">
             <div class="card mb-3">
                 <div class="row g-0">
 
                     <div class="col-md-4">
-                        <a th:href="@{'/book/' + ${dto.userBook.bookId}}"  class="card-title" >
-                            <img th:src="${dto.coverUrl}" class="img-fluid rounded-start">
+                        <a th:href="@{'/book/' + ${userBook.bookId}}"  class="card-title" >
+                            <img th:src="${userBook.coverUrl}" class="img-fluid rounded-start">
                         </a>
                     </div>
 
                     <div class="col-md-8">
                         <div class="card-body">
-                            <a th:href="@{'/book/' + ${dto.userBook.bookId}}"  class="card-title" th:text="${dto.userBook.bookName}">Name</a>
-                            <p class="card-text" th:text="${dto.userBook.authorNames}">Author name</p>
-                            <div th:switch="${dto.userBook.readingStatus}">
+                            <a th:href="@{'/book/' + ${userBook.bookId}}"  class="card-title" th:text="${userBook.bookName}">Name</a>
+                            <p class="card-text" th:text="${userBook.authorNames}">Author name</p>
+                            <div th:switch="${userBook.readingStatus}">
                                 <p th:case="'0-reading'" class="card-text">Currently Reading</p>
                                 <p th:case="'1-finished'" class="card-text">Finished</p>
                                 <p th:case="'2-dnf'" class="card-text">Did not finish</p>
                             </div>
                             <p class="card-text">
-                              <span th:each="rating: ${#numbers.sequence(0, dto.userBook.rating - 1)}">
+                              <span th:each="rating: ${#numbers.sequence(0, userBook.rating - 1)}">
                                 &#9733;
                               </span>
                             </p>

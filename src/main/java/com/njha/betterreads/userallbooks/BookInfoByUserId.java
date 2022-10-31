@@ -14,6 +14,9 @@ import org.springframework.data.cassandra.core.mapping.Table;
 import java.util.List;
 import java.util.UUID;
 
+import static com.njha.betterreads.common.Constants.COVER_IMAGE_ROOT;
+import static com.njha.betterreads.common.Constants.DEFAULT_NO_BOOK_COVER_IMG;
+
 @Table(value = "books_by_userid")
 @Setter
 @Getter
@@ -54,8 +57,11 @@ public class BookInfoByUserId {
     @CassandraType(type = CassandraType.Name.INT)
     private int rating;
 
-//    @Transient
-//    private String coverUrl
-
-//    transient doesn't seem to work well. extracting this into a dto for now
+    public String getCoverUrl() {
+        String coverImageUrl = DEFAULT_NO_BOOK_COVER_IMG;
+        if (coverIds != null && coverIds.size() > 0) {
+            coverImageUrl = COVER_IMAGE_ROOT + coverIds.get(0) + "-L.jpg";
+        }
+        return coverImageUrl;
+    }
 }

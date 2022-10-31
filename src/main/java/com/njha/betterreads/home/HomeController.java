@@ -1,6 +1,5 @@
 package com.njha.betterreads.home;
 
-import com.njha.betterreads.userallbooks.BookInfoByUserIdDto;
 import com.njha.betterreads.userallbooks.BookInfoByUserId;
 import com.njha.betterreads.userallbooks.UserAllBooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,19 +30,8 @@ public class HomeController {
             model.addAttribute("loginId", userId);
 
             Slice<BookInfoByUserId> top100UserBooks = userAllBooksRepository.findAllById(userId, CassandraPageRequest.of(0, 100));
-            List<BookInfoByUserIdDto> userBooks = top100UserBooks.stream().distinct().map(book -> {
-                String coverImageUrl = DEFAULT_NO_BOOK_COVER_IMG;
-                if (book.getCoverIds() != null & book.getCoverIds().size() > 0) {
-                    coverImageUrl = COVER_IMAGE_ROOT + book.getCoverIds().get(0) + "-M.jpg";
-                }
-                BookInfoByUserIdDto bookInfoByUserIdDto = BookInfoByUserIdDto.builder()
-                        .userBook(book)
-                        .coverUrl(coverImageUrl)
-                        .build();
-                return bookInfoByUserIdDto;
-            }).collect(Collectors.toList());
-
-            model.addAttribute("books", userBooks);
+            List<BookInfoByUserId> uniqueUserBooks = top100UserBooks.stream().distinct().collect(Collectors.toList());
+            model.addAttribute("userBooks", uniqueUserBooks);
         }
 
         return "index";
