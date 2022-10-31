@@ -18,7 +18,7 @@ Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/
 **Cassandra console after data creation:**
 <img width="1792" alt="image" src="https://user-images.githubusercontent.com/58611230/198153521-0814456b-fffc-4286-8911-ed7f466eed7a.png">
 
-Checkout the [JavaClass](https://github.com/njha-collab/betterreads/blob/master/src/main/java/com/njha/betterreads/book/Book.java) For book_by_id table which facilitates this feature.
+Checkout the [Book.java Class](https://github.com/njha-collab/betterreads/blob/master/src/main/java/com/njha/betterreads/book/Book.java) for **book_by_id** table which facilitates this feature.
 
 ### Book detail:
 We get book by id from Cassandra book_by_id table and display it to UI
@@ -35,6 +35,8 @@ We make call to https://openlibrary.org/search.json?q={query} api to get search 
 3. user njha-collab adds info for another book OL10009701W 
 ![image](https://user-images.githubusercontent.com/58611230/198901956-bcc42b3f-50e7-4eea-b1ad-7701fcc50d66.png)
 
+Checkout the [BookInfoByUserIdAndBookId.java Class](https://github.com/njha-collab/betterreads/blob/master/src/main/java/com/njha/betterreads/userbook/BookInfoByUserIdAndBookId.java) For **book_by_userid_and_bookid** table which facilitates this feature.
+
 **UI:**
 ![image](https://user-images.githubusercontent.com/58611230/198902049-70b959b2-8675-476e-9e39-edcab624ef9a.png)
 ![image](https://user-images.githubusercontent.com/58611230/198902063-b7b948af-95bc-4eac-879d-569b20d27803.png)
@@ -44,6 +46,8 @@ We make call to https://openlibrary.org/search.json?q={query} api to get search 
 Displays top books that a user has interacted with on user's home page
 **Cassandra console:**
 ![image](https://user-images.githubusercontent.com/58611230/198909098-f6b616c3-0c4d-49ec-885d-e33a353b09f6.png)
+
+Checkout the [BookInfoByUserId.java Class](https://github.com/njha-collab/betterreads/blob/master/src/main/java/com/njha/betterreads/userallbooks/BookInfoByUserId.java) For **books_by_userid** table which facilitates this feature.
 
 **UI:**
 ![image](https://user-images.githubusercontent.com/58611230/198909034-d1c1ce34-e267-493e-9a59-984e5100e526.png)
