@@ -52,7 +52,7 @@ public class BookInfoByUserId {
     @CassandraType(type = CassandraType.Name.TIMEUUID)
     private UUID timeUuid;
 
-    @PrimaryKeyColumn(type = PrimaryKeyType.CLUSTERED, ordering = Ordering.ASCENDING)
+    @PrimaryKeyColumn(type = PrimaryKeyType.CLUSTERED, ordering = Ordering.DESCENDING)
     @CassandraType(type = CassandraType.Name.TEXT)
     private String readingStatus;
 
