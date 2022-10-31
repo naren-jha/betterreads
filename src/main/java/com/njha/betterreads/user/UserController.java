@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * This controller is used only for checking the current logged-in user. Can be deleted later.
+ */
 @Slf4j
 @RestController
 @RequestMapping("/user")
