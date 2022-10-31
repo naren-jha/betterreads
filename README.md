@@ -56,4 +56,8 @@ Checkout the [BookInfoByUserId.java Class](https://github.com/njha-collab/better
 ## Reading materials:
 * https://www.baeldung.com/spring-data-cassandra-tutorial
 * https://medium.com/@aamine/spring-data-for-cassandra-a-complete-example-3c6f7f39fef9
+
 * https://stackoverflow.com/questions/24949676/difference-between-partition-key-composite-key-and-clustering-key-in-cassandra
+* https://www.quora.com/What-is-the-difference-between-primary-partition-and-clustering-key-in-Cassandra
+* https://community.datastax.com/questions/6171/primary-key-vs-clustering-column-vs-partition-key.html
+* https://intellidzine.blogspot.com/2014/01/cassandra-data-modelling-primary-keys.html
