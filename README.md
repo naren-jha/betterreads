@@ -4,6 +4,8 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 
 [Youtube playlist](https://youtu.be/LxVGFBRpEFM?list=PL9MzuY4_smVbXddmeo8WU-OuvQMlRcSDx)
 
+[Design Doc](https://drive.google.com/file/d/13FBXQvcFNA_kmeAHeVjPMQ5xwrpDZM-g/view?usp=sharing)
+
 ### GitHub User authentication setup
 Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/koushikkothagal/spring-github-login-starter) (or [this](https://github.com/koushikkothagal/spring-reactive-github-login-starter)) github repositories to build oauth2Login using github.
 1. Create a GitHub App and get the Client ID and Client Secret values. (Specify callback URL as http://localhost:8080/login/oauth2/code/github for development, uncheck Web hooks)
