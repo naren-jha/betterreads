@@ -2,7 +2,7 @@
 
 Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded into datastax Cassandra cluster using [this app](https://github.com/njha-collab/betterread-data-loader)
 
-[Youtube playlist](https://youtu.be/LxVGFBRpEFM?list=PL9MzuY4_smVbXddmeo8WU-OuvQMlRcSDx)
+[Youtube Playlist](https://youtu.be/LxVGFBRpEFM?list=PL9MzuY4_smVbXddmeo8WU-OuvQMlRcSDx)
 
 [Design Doc](https://drive.google.com/file/d/13FBXQvcFNA_kmeAHeVjPMQ5xwrpDZM-g/view?usp=sharing)
 
