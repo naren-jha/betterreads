@@ -4,6 +4,22 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 
 [Design Doc](https://drive.google.com/file/d/13FBXQvcFNA_kmeAHeVjPMQ5xwrpDZM-g/view?usp=sharing)
 
+
+### Cassandra Docs
+* https://cassandra.apache.org/doc/latest/
+* https://www.datastax.com/blog/basic-rules-cassandra-data-modeling
+* https://cassandra.apache.org/doc/latest/cassandra/data_modeling/index.html
+* https://www.datastax.com/blog/coming-12-collections-support-cql3
+* https://www.datastax.com/blog/cql-improvements-cassandra-21
+* https://www.datastax.com/examples
+* https://www.datastax.com/examples/astra-netflix
+* https://www.datastax.com/examples/astra-tik-tok
+* https://youtu.be/fcohNYJ1FAI
+* https://youtu.be/u6pKIrfJgkU
+* https://academy.datastax.com/#/courses/c5b626ca-d619-45b3-adf2-a7d2b940a7ee
+* https://www.baeldung.com/cassandra-with-java
+* https://www.baeldung.com/cassandra-data-modeling
+
 ### GitHub User authentication setup
 Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/koushikkothagal/spring-github-login-starter) (or [this](https://github.com/koushikkothagal/spring-reactive-github-login-starter)) github repositories to build oauth2Login using github.
 1. Create a GitHub App and get the Client ID and Client Secret values. (Specify callback URL as http://localhost:8080/login/oauth2/code/github for development, uncheck Web hooks)
