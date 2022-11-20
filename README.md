@@ -7,8 +7,8 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 
 ### Cassandra Docs
 * https://cassandra.apache.org/doc/latest/
-* https://www.datastax.com/blog/basic-rules-cassandra-data-modeling
 * https://cassandra.apache.org/doc/latest/cassandra/data_modeling/index.html
+* https://www.datastax.com/blog/basic-rules-cassandra-data-modeling
 * https://www.datastax.com/blog/coming-12-collections-support-cql3
 * https://www.datastax.com/blog/cql-improvements-cassandra-21
 * https://www.datastax.com/examples
@@ -17,8 +17,6 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 * https://youtu.be/fcohNYJ1FAI
 * https://youtu.be/u6pKIrfJgkU
 * https://academy.datastax.com/#/courses/c5b626ca-d619-45b3-adf2-a7d2b940a7ee
-* https://www.baeldung.com/cassandra-with-java
-* https://www.baeldung.com/cassandra-data-modeling
 
 ### GitHub User authentication setup
 Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/koushikkothagal/spring-github-login-starter) (or [this](https://github.com/koushikkothagal/spring-reactive-github-login-starter)) github repositories to build oauth2Login using github.
