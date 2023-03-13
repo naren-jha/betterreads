@@ -19,6 +19,7 @@ Cassandra demo app - BetterReads (Similar to GoodReads). Data is first loaded in
 * https://youtu.be/fcohNYJ1FAI
 * https://youtu.be/u6pKIrfJgkU
 * https://academy.datastax.com/#/courses/c5b626ca-d619-45b3-adf2-a7d2b940a7ee
+* https://www.datastax.com/blog/putting-some-structure-storage-engine
 
 ### GitHub User authentication setup
 Follow this [video](https://youtu.be/nwyf_4aSkqM) and [this](https://github.com/koushikkothagal/spring-github-login-starter) (or [this](https://github.com/koushikkothagal/spring-reactive-github-login-starter)) github repositories to build oauth2Login using github.
