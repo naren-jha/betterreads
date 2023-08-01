@@ -28,8 +28,9 @@ import static com.njha.betterreads.common.Constants.DEFAULT_NO_BOOK_COVER_IMG;
  * When a logged-in user visits home page, we are going to show the top books that the user has
  * interacted with.
  *
- * Partitioning is done only on user_id column because we want to be able to store multiple entries
- * for this object for one user.
+ * Partitioning is done only on user_id column because we want to be able to query books info by user_id
+ * but then we add some clustering columns, as we want to be able to store multiple books info entries
+ * for one user. adding clustering column also helps in sorting objects
  *
  */
 @Table(value = "books_by_userid")
