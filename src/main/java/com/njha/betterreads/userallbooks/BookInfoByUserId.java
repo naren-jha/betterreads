@@ -30,7 +30,8 @@ import static com.njha.betterreads.common.Constants.DEFAULT_NO_BOOK_COVER_IMG;
  *
  * Partitioning is done only on user_id column because we want to be able to query books info by user_id
  * but then we add some clustering columns, as we want to be able to store multiple books info entries
- * for one user. adding clustering column also helps in sorting objects
+ * for one user. adding clustering column also helps in sorting objects.
+ * so we need some clustering column, but we can choose clustering column as the columns that we need sorting on.
  *
  */
 @Table(value = "books_by_userid")
